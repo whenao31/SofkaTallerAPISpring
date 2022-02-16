@@ -18,4 +18,10 @@ public interface UserRepository extends CrudRepository<UserModel, Long> {
 
 //    Method to read users by the priority attribute.
     public abstract ArrayList<UserModel> findByPriority(Integer priority);
+
+//    Method to obtain users by its gender attribute.
+    public abstract ArrayList<UserModel> findByGender(Character gender);
+
+//    Method to obtain users ordered by its name.
+    public abstract ArrayList<UserModel> findByOrderByName();
 }

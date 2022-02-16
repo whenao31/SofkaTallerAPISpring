@@ -18,7 +18,7 @@ public class UserModel {
     private String name;
     private String email;
     private Integer priority;
-    private Character genre;
+    private Character gender;
 
     public Long getId() {
         return id;
@@ -52,11 +52,11 @@ public class UserModel {
         this.priority = priority;
     }
 
-    public Character getGenre() {
-        return genre;
+    public Character getGender() {
+        return gender;
     }
 
-    public void setGenre(Character genre) {
-        this.genre = genre;
+    public void setGender(Character gender) {
+        this.gender = gender;
     }
 }

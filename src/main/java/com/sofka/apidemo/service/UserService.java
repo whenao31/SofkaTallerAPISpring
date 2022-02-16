@@ -49,4 +49,14 @@ public class UserService {
             return false;
         }
     }
+
+//    Method to get Users by its gender by using the Crud from the repository.
+    public ArrayList<UserModel> getByGender(Character gender){
+        return userRepository.findByGender(gender);
+    }
+
+//    Method to obtain users ordered by its name.
+    public ArrayList<UserModel> getUsersOrderedByName(){
+        return userRepository.findByOrderByName();
+    }
 }
